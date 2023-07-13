@@ -1,0 +1,1107 @@
+* {
+	box-sizing: border-box;
+}
+
+body{
+	box-sizing: border-box;
+	margin: 0 auto;
+	width: 100%;
+	/* max-width: 1400px; */
+	text-align: center;
+	background-color: rgba(242, 233, 223,0.5);
+	font-family: 'Times New Roman', Times, serif;
+	overflow-x: hidden;
+}
+
+/* MAP
+================================== */
+#aktobe{
+	/* display: none; */
+	position: absolute;
+	left: 200px;
+	bottom: 20px;
+	/* margin-bottom: 30px; */
+	
+}
+#ata{
+	position: absolute;
+	right: 200px;
+	bottom: 20px;
+	/* margin-bottom: 30px; */
+}
+.map{
+	position: relative;
+	width: 100%;
+	height: 300px;
+	background-color: #D3CACE;
+}
+
+
+
+/* LOGIN
+================================ */
+.user_profile {
+	display: none;
+}
+
+.pageR{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.336);
+	background-position: center;
+	background-size: cover;
+	position: absolute;
+	display: none;
+}
+
+.box-form{
+	z-index: 10000;
+	width: 380px;
+	height: 480px;
+	position: relative;
+	margin: 6% auto;
+	background-color: seashell;
+	padding: 5px;
+	overflow: hidden;
+}
+
+.button-box{
+	width: 220px;
+	margin: 60px auto 30px auto;
+	position: relative;
+	box-shadow: 0 0 20px 9px rgb(194, 136, 136);
+	border-radius: 30px;
+}
+
+.toggle-btn{
+	padding: 10px 30px;
+	cursor: pointer;
+	background: transparent;
+	border: 0;
+	outline: none;
+	position: relative;
+}
+
+.close{
+	font-size: 40px;
+	transform: rotate(45deg);
+	right: 15px;
+	position: absolute;
+	cursor: pointer;
+}
+
+#btn{
+	top: 0;
+	left:0;
+	position: absolute;
+	width: 110px;
+	height: 100%;
+	background: wheat;
+	border-radius: 30px;
+	transition: 1s;
+}
+
+.input-group{
+	top: 180px;
+	position: absolute;
+	width: 280px;
+	transition: 1s;
+}
+
+.input-field{
+	width: 100%;
+	padding: 10px 0;
+	margin: 5px 0;
+	border-left: 0;
+	border-top: 0;
+	border-bottom: solid black 1px;
+	border-right: 0;
+	outline: none;
+	background: transparent;
+}
+
+.submit-btn{
+	width: 85%;
+	padding: 10px 30px;
+	cursor: pointer;
+	display: block;
+	margin: auto auto -40px auto;
+	background: wheat;
+	border: 0;
+	outline: none;
+	border-radius: 30px;
+}
+
+.check{
+	margin: 10px 10px 30px 5px;
+}
+
+span{
+	color: #777;
+	font-size: 12px;
+	left: 35px;
+	bottom: 28px;
+	position: absolute;
+}
+
+#logIn{
+	left:50px;
+	top:150px;
+}
+
+#signIn{
+	left: 450px;
+	top:150px;
+}
+
+/* SLIDE 
+===================================*/
+.container2 img{
+	object-fit: none;
+  	object-position: -400px -150px;
+}
+.container2{
+	max-width: 1400px;
+	height: 450px;
+	overflow: hidden;
+	margin: 0 auto;	
+}
+
+/* ABOUT US
+====================================== */
+.title{
+	padding-top: 50px;
+	text-transform: uppercase;
+	font-size: 50px;
+	text-align: left;
+	font-family: 'Barlow Condensed', sans-serif;
+}
+.com_name {
+	font-size: 70px;
+}
+.desc{
+	width: 500px;
+	text-align: justify;
+}
+.about{
+	/* position: relative; */
+	padding-left: 150px;
+	text-align: left;
+	font-size: 25px;
+	font-family: 'Abel', sans-serif;
+	
+}
+.about_pic{
+	margin-left: 150px;
+}
+.aboutus{
+	display: flex;
+}
+/* Parralax
+============================================ */
+
+.parallax {
+	background-image: url("piony-bardovye-kust.jpg");
+    min-height: 600px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* Parralax
+============================================ */
+
+.parallax2 {
+	position: relative;
+	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	background-image: url("rasteniya-na-balkone.jpg");
+    min-height: 600px; 
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* Parralax3
+============================================ */
+
+.parallax3 {
+	background-image: url("fon-tsvety-eustoma-4.jpg");
+	min-height: 600px; 
+	background-position-y: -200px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
+	
+}
+/* review
+============================================ */
+#review{
+	margin-top: 20px;
+	font-size: 60px;
+	font-family: 'Barlow Condensed', sans-serif;
+}
+.parallax2 .card{
+	border-radius: 5px;
+	text-align: center;
+	width: 340px;
+	height: 500px;
+	background-color: rgba(255, 255, 255, 0.5);
+	border-color: transparent;
+}
+.parallax2 img{
+	margin-left: 42px;
+	width: 250px;
+	height: auto;
+}
+.parallax2 .card-title{
+	font-family: 'Barlow Condensed', sans-serif;
+	font-size: 25px;
+}
+.parallax2 .card-text{
+	font-family:'Abel', sans-serif ;
+	font-size: 20px;
+}
+#pharse {
+	font-family: 'Abel', sans-serif;
+	font-size: 40px;
+	padding-top: 200px;
+}
+#author{
+	font-family: 'Barlow Condensed', sans-serif;
+	letter-spacing: 4px;
+	font-size: 20px;
+}
+.container1{
+	width: 100%;
+	height: 600px;
+	background-color: rgba(0, 0, 0, 0.2);
+}
+/* Services
+============================================ */
+.services{
+	display: flex;
+	text-align: left;
+	font-size:25px;
+	margin-bottom: 100px;
+	
+}
+.serv_pic{
+	width: 400px;
+    height: 400px;
+	margin-left: 150px;
+	margin-top: 100px;
+}
+.serv_pic img{
+	width: 100%;
+    height: auto;
+}
+.serv_info{
+	margin-left: 250px;
+	display: inline;
+}
+.serv_list{
+	font-size: 25px;
+	font-family: 'Abel', sans-serif;
+}
+.serv_head{
+	margin-top: 100px;;
+	text-transform: uppercase;
+	font-size: 70px;
+	font-family:'Barlow Condensed', sans-serif;
+}
+/* CONTACT US
+============================================ */
+.g{background-color:#d3cace;min-height: 500px;}
+.container{
+		width: 100%;
+		max-width: 1170px;
+		margin: 0 auto;	
+}
+.contact, .contact2{
+	color: white;
+	font-size: 25px;
+	font-family: 'Abel', sans-serif;
+	border-bottom: white solid 1px;
+}
+#cont{
+	padding-top: 50px;
+	font-size: 40px;
+	border-bottom: white solid 1px;
+	font-family:'Barlow Condensed', sans-serif;
+	text-transform: uppercase;
+}
+/* PREHEADER
+============================================ */
+
+/* PREHEADER
+============================================ */
+.start{
+	
+	/* width: 100%;
+	max-width: 1170px;
+	margin: 0 auto;	 */
+	display: flex;
+	position: relative;
+}
+
+#search{
+	width: 30px;
+	position: absolute;
+	top: 80px;
+	left: 100px;
+	/* margin: 80px 450px 0 100px; */
+}
+.logo{
+	/* width: 30px; */
+	/* position: absolute;
+	top: 20px;
+	left: 450px;*/
+	margin-left: 600px;
+	margin-bottom: 40px; 
+	padding-top: 20px;
+}
+#login{
+	width: 40px;
+	/* margin: 70px 70px 0 450px; */
+	position: absolute;
+	top: 80px;
+	right: 100px;
+}
+
+/* ARRIVAL
+================== */
+.visual .card{
+	max-width: 500px;
+	min-height: 500px;
+	background-color: transparent;
+	border: transparent;
+	margin: 30px 50px;
+} 
+.card-img-top{
+	height: 300px;
+	object-fit: cover;
+}
+#main{
+	margin-left: 680px;
+	padding: 20px 0px;
+	color: black;
+	font-family:'Barlow Condensed', sans-serif;
+	font-size: 35px;
+}
+.card-body{
+	font-family: 'Abel', sans-serif;
+}
+
+
+/* NAV
+=================================== */
+.nav__link{
+	text-decoration: none;
+	color: black;
+}
+.nav__link:hover{
+	text-decoration: none;
+	color: black;
+}
+.nav{
+	cursor: pointer;
+	margin-bottom:20px;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 25px;
+	display: flex;
+	justify-content: space-around;
+	padding: 0 50px;
+}
+.arrival{
+	cursor: pointer;
+	display: flex;
+	/* flex-wrap: wrap;	 */
+	
+	
+}
+.visual{
+	color:#7A706D;
+	display: flex;
+	flex-wrap: wrap;
+}
+.card-deck #head{
+	color: #787878;
+} 
+.card-deck .card{
+	margin-top: 50px;
+	cursor: pointer;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 20px;
+	height: 300px;
+	background-color: transparent;
+	border: transparent;
+}
+.card-deck{
+	background-color:#d3cace ;
+	color: white;
+}
+#head{
+	letter-spacing: 10px;
+}
+#email{
+	cursor: pointer;
+	background-color: transparent;
+	border-color: transparent;
+	letter-spacing: 4px;
+	width: 80%;
+}
+.submit{
+	cursor: pointer;
+	
+	position: absolute;
+	right: 30px;
+	border-color: transparent;
+	background-color: rgb(207, 166, 166);
+}
+#toggle, label{
+	display: none;
+}
+.choice{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin:  60px auto 130px auto;
+	
+}
+.d{
+	position: relative;
+	color: white;
+	font-size: 27px;
+}
+.centered {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+  }
+.ch{margin-top: 0px; 
+	padding-top: 40px; 
+	color: black;
+	font-family:'Barlow Condensed', sans-serif;
+	text-transform: uppercase;
+	font-size: 50px;
+}
+.homePlants{
+	color:#7A706D;
+	display: flex;
+	margin-top: 100px;
+	margin-bottom: 100px;
+
+}
+.homePlants h1{margin: 50px 0px 35px 30px;}
+.homePlants p{
+	font-size: 23px; 
+	font-family: 'Open Sans Condensed', sans-serif;
+	margin: 20px 80px 20px 120px;
+	/* letter-spacing: 3px; */
+}
+.homePlants img{
+	margin: 20px 20px 40px 200px;
+}
+
+.carousel-indicators{
+	margin-left: 250px;
+	margin-bottom: 50px;
+}
+
+  
+#demo{
+	width: 700px;
+ }
+#closeb{
+	display: none;
+}
+
+
+ /* =========================================================== */
+   @media (max-width: 360px) {
+	   body{
+			overflow-x: hidden;
+	   }
+
+	   
+	   #closeb {
+		   display: none;
+	   }
+	   .nav{
+		   
+		   font-size: 30px;
+		   /* display: none; */
+		   flex-direction: column;
+	   }
+	  .start{
+		max-width: 360px;
+		height: 200px;
+		display: flex;
+		position: relative;
+		}
+		#search{
+			width: 30px;
+			position: absolute;
+			top: 30px;
+			left: 30px;
+		}
+		#login{
+			/* float: right; */
+			width: 30px;
+			position: absolute;
+			top: 29px;
+			right: 20px;
+		}
+		.logo{
+			margin-left: 30px;
+			margin-bottom: 40px; 
+			padding-top: 20px;
+			position: absolute;
+			top: 20px;
+			left: 0px;
+		 } 
+		.container2 img{
+			object-fit: none;
+			object-position:-700px -200px ;
+			
+		}
+		.container2{
+			max-width: 1400px;
+			height: 450px;
+			overflow: hidden;
+			margin: 0 auto;	
+		}
+		/* ABOUT US
+====================================== */
+.title{
+	/* position: absolute;
+	left: 60px; */
+	padding-top: 20px;
+	text-transform: uppercase;
+	font-size: 50px;
+	text-align: left;
+	font-family: 'Barlow Condensed', sans-serif;
+}
+.com_name {
+	/* position: absolute;
+	left: 20px; */
+	font-size: 70px;
+}
+.desc{
+	/* position: absolute;
+	left: 10px; */
+	width: 340px;
+	text-align: justify;
+	padding: 20px 20px 20px 0;
+}
+.about{
+	position: relative;
+	padding-left: 20px;
+	text-align: left;
+	font-size: 25px;
+	font-family: 'Abel', sans-serif;
+	
+}
+.about_pic{
+	margin-left: 150px;
+	display: none;
+}
+.aboutus{
+	display: flex;
+	flex-direction: column;
+}
+/* Services
+============================================ */
+.services{
+	display: inline;
+	text-align: left;
+	font-size:25px;
+	margin-bottom: 100px;
+	
+}
+.serv_pic{
+	display: none;
+	width: 400px;
+    height: 400px;
+	margin-left: 150px;
+	margin-top: 0px;
+}
+.serv_pic img{
+	width: 100%;
+    height: auto;
+}
+.serv_info{
+	margin-left: 0px;
+	padding-left: 10px;
+	display: inline;
+}
+.serv_list{
+	font-size: 25px;
+	font-family: 'Abel', sans-serif;
+}
+.serv_head{
+	margin-top: 30px;
+	text-transform: uppercase;
+	font-size: 70px;
+	font-family:'Barlow Condensed', sans-serif;
+}
+/* CONTACT US
+============================================ */
+.g{
+	background-color:#d3cace;
+	min-height:500px;
+}
+.container{
+		width: 100%;
+		max-width: 360px;
+		margin: 0 auto;	
+}
+.contact{
+	color: white;
+	font-size: 25px;
+	font-family: 'Abel', sans-serif;
+	border-bottom: white solid 1px;
+}
+#cont{
+	padding-top: 50px;
+	font-size: 40px;
+	border-bottom: white solid 1px;
+	font-family:'Barlow Condensed', sans-serif;
+	text-transform: uppercase;
+}
+#main{
+	margin-left: 100px;
+}
+.parallax2{background-image: none;}
+
+.homePlants p{
+	text-align: justify;
+	margin: 0 20px;
+}
+.homePlants h1{margin: 20px 0px 35px 30px;}
+#demo{
+	display: none;
+}
+.d img{
+	width: 260px;
+    height: 260px; 
+	object-fit: cover;
+	margin-bottom: 10px;
+}
+.card-deck .card{
+	margin-top:-1px;
+	height: 200px;
+}
+.arrival{
+	flex-wrap: wrap;
+}
+.carousel-indicators{
+	margin-left: 50px;
+	margin-bottom: 50px;
+}
+#aktobe,#ata, #farm {
+	width: 380px;
+	height: 300px;
+	display: none;
+	position: absolute;
+	left: 0px;
+	margin-top: -5px;
+	margin-bottom: 0px;
+}
+}
+
+@media (max-width: 400px) {
+	body{
+		overflow-x: hidden;
+   }
+
+   
+   #closeb {
+	   display: none;
+   }
+   .nav{
+	   
+	   font-size: 30px;
+	   /* display: none; */
+	   flex-direction: column;
+   }
+  .start{
+	max-width: 360px;
+	height: 200px;
+	display: flex;
+	position: relative;
+	}
+	#search{
+		width: 30px;
+		position: absolute;
+		top: 30px;
+		left: 30px;
+	}
+	#login{
+		/* float: right; */
+		width: 30px;
+		position: absolute;
+		top: 29px;
+		right: 20px;
+	}
+	.logo{
+		margin-left: 30px;
+		margin-bottom: 40px; 
+		padding-top: 20px;
+		position: absolute;
+		top: 20px;
+		left: 0px;
+	 } 
+	.container2 img{
+		object-fit: none;
+		object-position:-700px -200px ;
+		
+	}
+	.container2{
+		max-width: 1400px;
+		height: 450px;
+		overflow: hidden;
+		margin: 0 auto;	
+	}
+	/* ABOUT US
+====================================== */
+.title{
+/* position: absolute;
+left: 60px; */
+padding-top: 20px;
+text-transform: uppercase;
+font-size: 50px;
+text-align: left;
+font-family: 'Barlow Condensed', sans-serif;
+}
+.com_name {
+/* position: absolute;
+left: 20px; */
+font-size: 70px;
+}
+.desc{
+/* position: absolute;
+left: 10px; */
+width: 340px;
+text-align: justify;
+padding: 20px 20px 20px 0;
+}
+.about{
+position: relative;
+padding-left: 20px;
+text-align: left;
+font-size: 25px;
+font-family: 'Abel', sans-serif;
+
+}
+.about_pic{
+margin-left: 150px;
+display: none;
+}
+.aboutus{
+display: flex;
+flex-direction: column;
+}
+/* Services
+============================================ */
+.services{
+display: inline;
+text-align: left;
+font-size:25px;
+margin-bottom: 100px;
+
+}
+.serv_pic{
+display: none;
+width: 400px;
+height: 400px;
+margin-left: 150px;
+margin-top: 0px;
+}
+.serv_pic img{
+width: 100%;
+height: auto;
+}
+.serv_info{
+margin-left: 0px;
+padding-left: 10px;
+display: inline;
+}
+.serv_list{
+font-size: 25px;
+font-family: 'Abel', sans-serif;
+}
+.serv_head{
+margin-top: 30px;
+text-transform: uppercase;
+font-size: 70px;
+font-family:'Barlow Condensed', sans-serif;
+}
+/* CONTACT US
+============================================ */
+.g{
+background-color:#d3cace;
+min-height:500px;
+}
+.container{
+	width: 100%;
+	max-width: 360px;
+	margin: 0 auto;	
+}
+.contact{
+color: white;
+font-size: 25px;
+font-family: 'Abel', sans-serif;
+border-bottom: white solid 1px;
+}
+#cont{
+padding-top: 50px;
+font-size: 40px;
+border-bottom: white solid 1px;
+font-family:'Barlow Condensed', sans-serif;
+text-transform: uppercase;
+}
+#main{
+margin-left: 100px;
+}
+.parallax2{background-image: none;}
+
+.homePlants p{
+text-align: justify;
+margin: 0 20px;
+}
+.homePlants h1{margin: 20px 0px 35px 30px;}
+#demo{
+display: none;
+}
+.d img{
+width: 260px;
+height: 260px; 
+object-fit: cover;
+margin-bottom: 10px;
+}
+.card-deck .card{
+margin-top:-1px;
+height: 200px;
+}
+.arrival{
+flex-wrap: wrap;
+}
+.carousel-indicators{
+margin-left: 50px;
+margin-bottom: 50px;
+}
+
+.map{
+	display: none;
+	position: relative;
+	width: 100%;
+	/* height: 300px; */
+	background-color: #D3CACE;
+}
+
+
+}
+@media (max-width: 425px) {
+	body{
+		overflow-x: hidden;
+		/* width: 425px; */
+   }
+
+   
+   #closeb {
+	   display: none;
+   }
+   .nav{
+	   
+	   font-size: 30px;
+	   /* display: none; */
+	   flex-direction: column;
+   }
+  .start{
+	max-width: 475px;
+	height: 200px;
+	display: flex;
+	position: relative;
+	}
+	#search{
+		width: 30px;
+		position: absolute;
+		top: 30px;
+		left: 30px;
+	}
+	#login{
+		/* float: right; */
+		width: 30px;
+		position: absolute;
+		top: 29px;
+		right: 30px;
+	}
+	.logo{
+		margin-left: 30px;
+		margin-bottom: 40px; 
+		padding-top: 20px;
+		position: absolute;
+		top: 20px;
+		left: 10px;
+	 } 
+	.container2 img{
+		object-fit: none;
+		object-position:-700px -200px ;
+		
+	}
+	.container2{
+		max-width: 1400px;
+		height: 450px;
+		overflow: hidden;
+		margin: 0 auto;	
+	}
+	/* ABOUT US
+====================================== */
+.title{
+/* position: absolute;
+left: 60px; */
+padding-top: 20px;
+text-transform: uppercase;
+font-size: 50px;
+text-align: left;
+font-family: 'Barlow Condensed', sans-serif;
+}
+.com_name {
+/* position: absolute;
+left: 20px; */
+font-size: 70px;
+}
+.desc{
+/* position: absolute;
+left: 10px; */
+width: 340px;
+text-align: justify;
+padding: 20px 20px 20px 0;
+}
+.about{
+position: relative;
+padding-left: 20px;
+text-align: left;
+font-size: 25px;
+font-family: 'Abel', sans-serif;
+
+}
+.about_pic{
+margin-left: 150px;
+display: none;
+}
+.aboutus{
+display: flex;
+flex-direction: column;
+}
+/* Services
+============================================ */
+.services{
+display: inline;
+text-align: left;
+font-size:25px;
+margin-bottom: 100px;
+
+}
+.serv_pic{
+display: none;
+width: 400px;
+height: 400px;
+margin-left: 150px;
+margin-top: 0px;
+}
+.serv_pic img{
+width: 100%;
+height: auto;
+}
+.serv_info{
+margin-left: 0px;
+padding-left: 10px;
+display: inline;
+}
+.serv_list{
+font-size: 25px;
+font-family: 'Abel', sans-serif;
+}
+.serv_head{
+margin-top: 30px;
+text-transform: uppercase;
+font-size: 70px;
+font-family:'Barlow Condensed', sans-serif;
+}
+/* CONTACT US
+============================================ */
+.g{
+background-color:#d3cace;
+min-height:500px;
+}
+.container{
+	width: 100%;
+	max-width: 360px;
+	margin: 0 auto;	
+}
+.contact{
+color: white;
+font-size: 25px;
+font-family: 'Abel', sans-serif;
+border-bottom: white solid 1px;
+}
+#cont{
+padding-top: 50px;
+font-size: 40px;
+border-bottom: white solid 1px;
+font-family:'Barlow Condensed', sans-serif;
+text-transform: uppercase;
+}
+#main{
+margin-left: 100px;
+}
+.parallax2{background-image: none;}
+
+.homePlants p{
+text-align: justify;
+margin: 0 20px;
+}
+.homePlants h1{margin: 20px 0px 35px 30px;}
+#demo{
+display: none;
+}
+.d img{
+width: 260px;
+height: 260px; 
+object-fit: cover;
+margin-bottom: 10px;
+}
+.card-deck .card{
+margin-top:-1px;
+height: 200px;
+}
+.arrival{
+flex-wrap: wrap;
+}
+.carousel-indicators{
+margin-left: 50px;
+margin-bottom: 50px;
+}
+
+.map{
+	display: none;
+	position: relative;
+	width: 100%;
+	/* height: 300px; */
+	background-color: #D3CACE;
+}
+
+
+}
+  
+
+
+

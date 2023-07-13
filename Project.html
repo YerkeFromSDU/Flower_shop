@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Project</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnMj8Xc5_jA0tqVHCoFHCk-2sHt4imItA&callback=initMap&libraries=&v=weekly" defer></script>
+	<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="proj_style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+	
+	<!-- REGISTRATION -->
+
+	<div id="pageR" class="pageR">
+		<div class="box-form">
+			<div class="close" onclick="close2()" >+</div>
+				<div class="button-box">
+					<div id="btn"></div>
+						<button type="button" class="toggle-btn" onclick="login()">Log In</button>
+						<button type="button" class="toggle-btn" onclick="sign()">Sign In</button>
+					</div>
+			
+					<form id="logIn" class="input-group">
+						<input type="text" name="username" class="input-field" placeholder="User Name" required>
+						<input type="text" class="input-field" placeholder="User Password" required>
+						<input type="checkbox" class="check"><span>Remember Me</span>
+						<button type="submit"  class="submit-btn">Log In</button>
+					</form>
+					<form id="signIn" class="input-group">
+						<input type="text" class="input-field" placeholder="User Name" required>
+						<input type="email" class="input-field" placeholder="Email.." required>
+						<input type="text" class="input-field" placeholder="User Password" required>
+						<input type="checkbox" class="check"><span>I agree with the terms</span>
+						<button type="button" class="submit-btn">Sign In</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="start">
+		
+		
+		
+		<div>
+			<img id="search"src="https://www.seekpng.com/png/full/12-121965_icons-logos-emojis-search-icon-png-grey.png" >
+		</div>
+		<div class="logo">
+			<img src="b-removebg-preview.png" >
+		</div>
+		<div>
+			<img id="login" onclick="pop()" src="logicon.png" >
+		</div>
+		<div class="user_profile">
+            <p id="user_name">John</p>
+        </div>
+
+	</div>
+	
+	<!-- HEADER -->
+
+	
+	<nav class="nav" id="nav">
+		
+		<a class="nav__link" href="#home" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)" onclick="location.reload()">home</a>
+		<a class="nav__link" href="#services" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">services</a>
+		<a class="nav__link" href="#plants" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">plants</a>
+		<a class="nav__link" href="#contact" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">contact us</a>
+		<a class="nav__link" href="#about" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">about us</a>
+		<a class="nav__link" href="#review" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">reviews</a>
+	</nav>
+
+
+	
+	<div id="demo1" class="carousel slide" data-ride="carousel">
+
+		
+		<ul class="carousel-indicators">
+		  <li data-target="#demo1" data-slide-to="0" class="active"></li>
+		  <li data-target="#demo1" data-slide-to="1"></li>
+		  <li data-target="#demo1" data-slide-to="2"></li>
+		</ul>
+		
+		<div class="container2">
+			<div class="carousel-inner">
+		  		<div class="carousel-item active">
+					<img src="https://images.wallpaperscraft.com/image/bouquet_flowers_composition_137663_2048x1152.jpg" alt="Los Angeles" >
+				</div>
+				<div class="carousel-item">
+					<img src="https://images.wallpaperscraft.com/image/rose_pink_flowers_150513_1920x1080.jpg" alt="Chicago" >
+			    </div>
+		  		<div class="carousel-item">
+					<img src="https://img5.goodfon.com/original/1920x1080/f/a2/piony-krasnye-tsvety-kust.jpg" alt="New York" >
+				</div>
+			</div>
+		</div>
+	  </div>
+
+	<!-- <div class="slides" > 
+		<img class="mySlides" src="https://images.wallpaperscraft.com/image/bouquet_flowers_composition_137663_2048x1152.jpg" style="filter: brightness(70%);">
+		<p id="pic_slides">Something hello</p>
+  		<img class="mySlides" src="https://img4.goodfon.com/original/3500x2333/4/f5/tsvety-tsvetok-tiulpany-buket-flowers-flower-tulips-bouquet.jpg" style="filter: brightness(70%);">
+  		<img class="mySlides" src="https://s2.best-wallpaper.net/wallpaper/1366x768/1804/Bouquet-flowers-roses-berries_1366x768.jpg" style="filter: brightness(70%);">
+	</div> -->
+	<hr>
+
+	<!-- ABOUTUS -->
+	<div class="aboutus">
+		<div class="about" id="about">
+			<div class="title">
+				<p>who we are...</p>
+			</div>
+			<div class="com_name">
+				<p>THE BLOOM</p>
+			</div>
+			<div class="desc">
+				<p>Since 2011, bloom has created unique floral bouquets for couples, for close person in Kazakhstan and around the world. we fond of being part of people happy moments. Bloom is a moniker that represents the team for who they are: passionate, free spirited and artful individuals who love drawing beauty and design from nature. </p>
+				<button>read more about bloom</button>
+			</div>
+		</div>
+		<div class="about_pic">
+			<img src="https://i.pinimg.com/564x/d7/ae/fa/d7aefaf60da91bdb50212118ce14ac76.jpg" alt="">
+		</div>
+	</div>
+	<hr>
+	<!-- PARRALAX -->
+
+	<div class="parallax"></div>
+
+	<!-- SERVICES -->
+	<div class="services" id="services">
+		<div class="serv_pic">
+			<img src="https://i.pinimg.com/564x/27/9a/c6/279ac6261c684c0b79cb596889457718.jpg" alt="">
+		</div>
+		<div class="serv_info">
+			<div class="serv_head">
+				<p>our services</p>
+			</div>
+			<div class="serv_list">
+				<ul>
+					<li>event & floral styling</li>
+					<li>bouquet & bouts</li>
+					<li>home plants</li>
+					<li>flower bar</li>
+					<li>full service florals</li>
+					<li>delivery of presents</li>
+				</ul>
+			</div>
+			
+		</div>
+	</div>
+	<hr>
+
+
+	<div id="back"class="visual">
+		<h2 id="main">New Arrivals</h2>
+		<div class="arrival" >
+			<div class="card" >
+			  <img class="card-img-top" src="https://i.pinimg.com/564x/79/94/5d/79945dc6564b5b30aaa0fef6e71a9732.jpg" alt="Card image">
+				  <div class="card-body">
+					<h4 class="card-title">tulips</h4>
+					<p class="card-text">1 $/pc</p>
+					<a href="#" class="btn btn-outline-dark">add to basket</a>
+				  </div>
+			</div>
+			
+			<div class="card">
+			  <img class="card-img-top" src="https://i.pinimg.com/564x/a1/45/93/a145936991ce5913ce9c4f74d372254d.jpg"  alt="Card image">
+				  <div class="card-body">
+					<h4 class="card-title">hydrangea</h4>
+					<p class="card-text">4 $/pc</p>
+					<a href="#" class="btn btn-outline-dark">add to basket</a>
+				  </div>
+			</div>
+			
+			<div class="card" >
+			  <img class="card-img-top" src="https://i.pinimg.com/564x/62/73/e4/6273e433559021d7d26ac826edeaa2a4.jpg" alt="Card image">
+				  <div class="card-body">
+					<h4 class="card-title">peony</h4>
+					<p class="card-text">4,6 $/pc</p>
+					<a href="#" class="btn btn-outline-dark">add to basket</a>
+				  </div>
+			</div>
+		
+			<div class="card"  >
+			  <img class="card-img-top" src="https://i.pinimg.com/564x/dd/69/8a/dd698aa2ec1c088b9f7654f2c51d35f4.jpg" alt="Card image">
+				  <div class="card-body">
+					<h4 class="card-title">sunflower</h4>
+					<p class="card-text">2,7 $/pc</p>
+					<a href="#" class="btn btn-outline-dark">add to basket</a>
+				  </div>
+			</div>
+		</div>
+	</div>
+	
+	<h1 id="review" >Reviews</h1>
+	<div class="parallax2">
+		<!-- <div class="container2"> -->
+  			<div class="card" >
+    			<img class="card-img-top" src="manu.jpg"  style="border-radius:190px" alt="Card image" style="width:100%">
+    			<div class="card-body">
+   					<h4 class="card-title">Manu Rios</h4>
+    				<p class="card-text">"That was best present option for my girlfriend. Especially tulips are very fresh in all season. Also i bought succulents, they are so cute."</p>
+      			</div>
+			</div>
+		  
+		  	<div class="card" >
+    			<img class="card-img-top" src="kenny.jpg" style="border-radius:190px" alt="Card image" style="width:100%">
+    			<div class="card-body">
+   					<h4 class="card-title">Kendall Jenner</h4>
+    				<p class="card-text">"I got marriage decorating service for my sister and it was so elegant. Florists here defenitly have good taste."</p>
+    			</div>
+		  	</div>
+		  
+		  	<div class="card" >
+    			<img class="card-img-top" src="anthon.jpg" style="border-radius:190px" alt="Card image" style="width:100%">
+    			<div class="card-body">
+   					<h4 class="card-title">Anthony Reeves</h4>
+    				<p class="card-text">"My mom loves indoor plants. My friends advise me this flower shop and I'm telling you guys, It's absolutely perfect."</p>
+    			</div>
+		 	</div>
+		<!-- </div> -->
+	</div>
+
+	<div class = "homePlants" id="plants">
+		<div>
+			<div id="demo" class="carousel slide" data-ride="carousel">
+
+				<!-- Indicators -->
+				<ul class="carousel-indicators">
+				  <li data-target="#demo" data-slide-to="0" class="active"></li>
+				  <li data-target="#demo" data-slide-to="1"></li>
+				  <li data-target="#demo" data-slide-to="2"></li>
+				  <li data-target="#demo" data-slide-to="3"></li>
+				  <li data-target="#demo" data-slide-to="4"></li>
+				</ul>
+				
+				<!-- The slideshow -->
+				<div class="carousel-inner">
+				  <div class="carousel-item active">
+					<img src="15.jpg"  width="400" height="400">
+				  </div>
+				  <div class="carousel-item">
+					<img src="3.jpg"  width="400" height="400">
+				  </div>
+				  <div class="carousel-item">
+					<img src="7.jpg" width="400" height="400">
+				  </div>
+				  <div class="carousel-item">
+					<img src="plant1.jpg" width="400" height="400">
+				  </div>
+				  <div class="carousel-item">
+					<img src="the-sill_philodendronplan2.jpg" width="400" height="400">
+				  </div>
+				</div>
+			</div>
+		</div>
+		<div>
+			<h1>Home Plants</h1>
+			<p>Not only do indoor plants enhance the overall appearance of a space, but they've been shown to boost moods, increase creativity, reduce stress, and eliminate air pollutants — making for a healthier, happier you. 
+				Also, it can improve your homes visuality so much. Let yourself be in a beauiful place.
+				Improve your home design and interier with those minimal decors.Our florists can help you to choose correct ones. Let your house be full of oxygen.</p>
+			<button type="button" class="btn btn-outline-dark">Choose</button>
+		</div>		
+	</div>
+	<hr>
+	<h1 class="ch">choose your collection</h1>
+	<div class="choice">
+		
+		<div class="d" onmouseover="mOver(this)" onmouseout="mOut(this)">
+			<img src="https://i.pinimg.com/originals/e4/d4/83/e4d48319a41f95ab198bf01131f88d35.jpg" height="350px" >
+			<div class="centered">Bouquets</div>
+		</div>
+		<div class="d" onmouseover="mOver(this)" onmouseout="mOut(this)">
+			<img src="https://i2.wp.com/lavka-flowers.ru/wp-content/uploads/2017/06/mboxgrayranunkulus.jpg?fit=1456%2C1456&ssl=1" height="350px">
+			<div class="centered">Boxes</div>
+		</div>
+		<div class="d" onmouseover="mOver(this)" onmouseout="mOut(this)">
+			<img src="https://i.pinimg.com/originals/2c/de/70/2cde7012d8f915bb69ced888ed822414.jpg" height="350px">
+			<div class="centered">Decoration</div>
+		</div>
+		<div class="d" onmouseover="mOver(this)" onmouseout="mOut(this)">
+			<img src="https://i.pinimg.com/originals/5f/a3/da/5fa3daa4c840f1f9ed7ac43e52612b51.jpg" height="350px" width="300px">
+			<div class="centered">Candle Arrangement</div>
+		</div>
+	</div>
+	
+	<div class="parallax3">
+		<div class="container1">
+			<p id="pharse">&#10077; after women, flowers are the most divine creation. &#10078;</p>
+			<p id="author">&#9866; CHRISTIAN DIOR</p></div>	
+		</div>
+		
+	<div class="g">
+		<div class="container">
+			<div class="contact" id="contact">
+				<p id="cont">contact us</p>
+				<p>the bloom corp.</p>
+				<p>aktobe, bokenbai street 32</p>
+				<p>almaty, keremet street 32</p>
+				<p>info@bloom.com</p>
+				<p>8(7132)53-05-98</p>
+				<p>8(7172)50-15-08</p>
+			</div>
+		</div>
+	</div>
+	
+	
+	
+		<div class="card-deck">
+		  <div class="card">
+			<div class="card-body text-center">
+			  <p id="head" class="card-text">THE BLOOM CORP.</p>
+			  <p class="card-text">About Us</p>
+			  <p class="card-text">Shop</p>
+			  <p class="card-text">Services</p>
+			</div>
+		  </div>
+		  <div class="card">
+			<div class="card-body text-center">
+			  <p id="head" class="card-text">CONTACT US</p>
+			  <p class="card-text" onclick="maps(this)" >BLOOM - Aktobe</p>
+			  <p class="card-text" onclick="maps(this)" >BLOOM - Almaty</p>
+			  <p class="card-text" onclick="maps(this)" >Visit the farm</p>
+			</div>
+		  </div>
+		  <div class="card">
+			<div class="card-body text-center">
+			  <p id="head" class="card-text">HELP</p>
+			  <p class="card-text">Payment Options</p>
+			  <p class="card-text">Delivery Info</p>
+			  <p class="card-text">FAQs</p>
+			</div>
+		  </div>
+		  <div class="card">
+			<div class="card-body text-center">
+			  <p id="head" class="card-text">STAY IN TOUCH</p>
+			  <p class="card-text">Get the latest news on our promos and fresh blooms!</p>
+			  <input type="text" id="email" name="firstname" placeholder="Enter your email..">
+			  <input type="submit" class="submit" value="subscribe">
+			</div>
+		  </div> 
+		  
+		</div>
+		<div class="map">
+			<iframe id = "aktobe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2548.48692828977!2d57.14629731561008!3d50.301504579455106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4182222035996bbb%3A0xaa504d4fdcffb636!2z0KbQstC10YLRiyDQkNC60YLQvtCx0LUgUk9NQU5USUM!5e0!3m2!1sru!2skz!4v1606726637687!5m2!1sru!2skz" width="500" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+			<iframe id = "ata" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2906.821257454202!2d76.93502381535203!3d43.23420707913788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38836f02cf71f23b%3A0x66c47fbf27cb203d!2zUkFGQUxFIC0gTEVUIEZMT1dFUlMgU1BFQUsgLSDQn9C-0LfQstC-0LvRjCDRhtCy0LXRgtCw0Lwg0LPQvtCy0L7RgNC40YLRjA!5e0!3m2!1sru!2skz!4v1606726606133!5m2!1sru!2skz" width="500" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+			
+			
+		  </div> 
+		<script type="text/javascript" src="proj_script.js"></script>
+		
+</body>
+</html>
